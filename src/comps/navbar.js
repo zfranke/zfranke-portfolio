@@ -76,7 +76,7 @@ function Navbar() {
                 <NavbarButton href="/about" sx={{ color: '#044a1e' }}>
                     About
                 </NavbarButton>
-                <NavbarButton href="/projects" color="inherit">
+                <NavbarButton href="/projects" sx={{ color: '#044a1e' }}>
                     Projects
                 </NavbarButton>
                 <NavbarButton href="/skills" color="inherit">
