@@ -44,10 +44,7 @@ function AboutPage() {
           },
         }}
       >
-        Hi, I'm Zach Franke, a software engineering professional with over 10
-        years of experience building and deploying scalable, secure, and
-        reliable infrastructure and software systems. I have a passion for using
-        technology to solve real-world problems and make people's lives easier.
+        Hi, I'm Zach Franke, a software engineering professional with over 4 years experience. 
       </Typography>
       <Typography
         variant="body1"
@@ -60,10 +57,7 @@ function AboutPage() {
           },
         }}
       >
-        Throughout my career, I have worked on a variety of projects spanning
-        different industries, including e-commerce, finance, and healthcare. I
-        have experience with a wide range of technologies, including Java,
-        Python, React, and AWS, among others.
+        Throughout my career, I have worked on a variety of projects covering frontend development, devops, and cloud services.
       </Typography>
       <Typography
         variant="body1"
