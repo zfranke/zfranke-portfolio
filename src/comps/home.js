@@ -13,9 +13,8 @@ function HomePage() {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '2rem',
         '@media (max-width:600px)': {
-          padding: '1rem',
+          padding: '1.5rem',
         },
       }}
     >
@@ -23,8 +22,11 @@ function HomePage() {
         variant="h1"
         sx={{
           fontSize: '4rem',
-          fontWeight: 600,
-          color: '#04702c',
+          fontFamily: [
+            'antique-olive',
+          ],
+          fontWeight: 500,
+          color: '#02ab64',
           marginBottom: '2rem',
           '@media (max-width:600px)': {
             fontSize: '3rem',
@@ -38,6 +40,9 @@ function HomePage() {
         variant="h2"
         sx={{
           fontSize: '2rem',
+          fontFamily: [
+            'antique-olive',
+          ],
           color: '#D6BF8D',
           marginBottom: '1.5rem',
           '@media (max-width:600px)': {
@@ -52,11 +57,13 @@ function HomePage() {
         variant="body"
         sx={{
           fontSize: '1.5rem',
-          color: '#B1CAB0',
-          marginBottom: '2rem',
+          fontFamily: [
+            'antique-olive',
+          ],
+          fontWeight: 400,
+          color: '#05deff',
           '@media (max-width:600px)': {
             fontSize: '1.25rem',
-            marginBottom: '1.5rem',
           },
         }}
       >

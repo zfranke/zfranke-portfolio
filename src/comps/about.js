@@ -24,7 +24,7 @@ function AboutPage() {
         sx={{
           fontSize: "3rem",
           fontWeight: 600,
-          color: "#232323",
+          color: "#04702c",
           marginBottom: "2rem",
           "@media (max-width:600px)": {
             fontSize: "2rem",
@@ -70,9 +70,7 @@ function AboutPage() {
           },
         }}
       >
-        When I'm not working, I enjoy spending time with my family, playing
-        guitar, and hiking in the mountains. Thank you for visiting my website,
-        and I look forward to hearing from you!
+        W
       </Typography>
     </Box>
   );
