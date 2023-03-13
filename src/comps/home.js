@@ -1,14 +1,16 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 function HomePage() {
   return (
+    <>
     <Box
       sx={{
         backgroundColor: '#1F1F1F',
         color: '#fff',
-        minHeight: '100vh',
+        minHeight: '87vh',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -27,9 +29,9 @@ function HomePage() {
           ],
           fontWeight: 500,
           color: '#02ab64',
-          marginBottom: '2rem',
+          marginBottom: '1.5rem',
           '@media (max-width:600px)': {
-            fontSize: '3rem',
+            fontSize: '2.5rem',
             marginBottom: '1.5rem',
           },
         }}
@@ -44,6 +46,7 @@ function HomePage() {
             'antique-olive',
           ],
           color: '#D6BF8D',
+          fontWeight: 450,
           marginBottom: '1.5rem',
           '@media (max-width:600px)': {
             fontSize: '1.5rem',
@@ -70,6 +73,8 @@ function HomePage() {
         I am passionate about building and deploying scalable, secure, and reliable infrastructure and software systems.
       </Typography>
     </Box>
+
+    </>
   );
 }
 

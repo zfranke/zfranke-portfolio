@@ -21,20 +21,26 @@ const pages = [
 
 const Logo = styled(Typography)({
   flexGrow: 1,
-  color: '#fff',
   fontWeight: 'bold',
   fontSize: '1.2rem',
   cursor: 'pointer',
 });
 
 const NavbarButton = styled(Button)({
-  color: '#fff',
   fontSize: '1rem',
   fontWeight: 'bold',
   '&:hover': {
     background: 'rgba(0,0,0,0.2)',
+    borderRadius: '5px',
+    color: 'white',
   },
 });
+
+const LinkButton = styled(Link)({
+  textDecoration: 'none',
+  color: 'white',
+});
+
 
 function Navbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -52,7 +58,7 @@ function Navbar() {
       <AppBar position="static" sx={{ backgroundColor: '#232323' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <NavbarButton href="/" >
-                <Logo variant="h5" component="div">
+                <Logo variant="h5" component="div" color="#02ab64">
                 Zach Franke
                 </Logo>
             </NavbarButton>
@@ -73,16 +79,16 @@ function Navbar() {
                     alignItems: 'center',
                 }}
                 >
-                <NavbarButton href="/about" sx={{ color: '#044a1e' }}>
+                <NavbarButton href="/about" sx={{ color: '#02ab64' }}>
                     About
                 </NavbarButton>
-                <NavbarButton href="/projects" sx={{ color: '#044a1e' }}>
+                <NavbarButton href="/projects" sx={{ color: '#D6BF8D' }}>
                     Projects
                 </NavbarButton>
-                <NavbarButton href="/skills" color="inherit">
+                <NavbarButton href="/skills" sx={{ color: '#05deff' }}>
                     Skills
                 </NavbarButton>
-                <NavbarButton href="/contact" color="inherit">
+                <NavbarButton href="/contact" sx={{ color: '#02ab64' }}>
                     Contact
                 </NavbarButton>
                 </Box>
@@ -91,11 +97,10 @@ function Navbar() {
                 anchorEl={anchorEl}
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
+                
             >
                 {pages.map((page) => (
-                <MenuItem key={page.name} href={page.href} onClick={handleClose}>
-                    {page.name}
-                </MenuItem>
+                <MenuItem key={page.name} onClick={handleClose}><LinkButton to={page.href}>{page.name}</LinkButton></MenuItem>
                 ))}
             </Menu>
             </Toolbar>

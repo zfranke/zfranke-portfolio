@@ -1,0 +1,20 @@
+[
+  {
+    "title": "SuperBowl Win",
+    "description": "This program is a fun tool to help predict who may win the 2023 Super Bowl",
+    "image": "/images/project1.jpg",
+    "link": "https://github.com/zfranke/SuperBowl-Win"
+  },
+  {
+    "title": "Apex Legends Randomizer - Web",
+    "description": "This is the second project",
+    "image": "/images/project2.jpg",
+    "link": "https://project2.com"
+  },
+  {
+    "title": "Project 3",
+    "description": "This is the third project",
+    "image": "/images/project3.jpg",
+    "link": "https://project3.com"
+  }
+]
