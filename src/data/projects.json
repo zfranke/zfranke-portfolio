@@ -1,0 +1,20 @@
+[
+  {
+    "name": "SuperBowl Win",
+    "description": "This program is a fun tool to help predict who may win the 2023 Super Bowl",
+    "link": "https://github.com/zfranke/SuperBowl-Win",
+    "icon": "football"
+  },
+  {
+    "name": "Apex Legends Randomizer - Web",
+    "description": "This is for a fun game mode on Apex Legends called Randomizer",
+    "link": "https://github.com/zfranke/ApexRandomizerWeb",
+    "icon": "gaming"
+  },
+  {
+    "name": "Runic",
+    "description": "This is a language interpreter for a custom language called Runic based on JavaScript",
+    "link": "https://github.com/zfranke/Runic",
+    "icon": "language"
+  }
+]

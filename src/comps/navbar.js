@@ -15,26 +15,33 @@ const pages = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Projects', href: '/projects' },
-  { name: 'Skills', href: '/skills' },
   { name: 'Contact', href: '/contact' },
 ];
 
 const Logo = styled(Typography)({
   flexGrow: 1,
-  color: '#fff',
   fontWeight: 'bold',
   fontSize: '1.2rem',
   cursor: 'pointer',
 });
 
 const NavbarButton = styled(Button)({
-  color: '#fff',
   fontSize: '1rem',
   fontWeight: 'bold',
   '&:hover': {
     background: 'rgba(0,0,0,0.2)',
+    borderRadius: '5px',
+    color: '#F2F2D5',
+    transform: 'scale(1.05)',
+    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.4)',
   },
 });
+
+const LinkButton = styled(Link)({
+  textDecoration: 'none',
+  color: '#F2F2D5',
+});
+
 
 function Navbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -49,10 +56,10 @@ function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: '#232323' }}>
+      <AppBar position="static" sx={{ backgroundColor: '#1A1D1E' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <NavbarButton href="/" >
-                <Logo variant="h5" component="div">
+                <Logo variant="h5" component="div" color="#55FDB6">
                 Zach Franke
                 </Logo>
             </NavbarButton>
@@ -73,16 +80,13 @@ function Navbar() {
                     alignItems: 'center',
                 }}
                 >
-                <NavbarButton href="/about" sx={{ color: '#044a1e' }}>
+                <NavbarButton href="/about" sx={{ color: '#55FDB6' }}>
                     About
                 </NavbarButton>
-                <NavbarButton href="/projects" color="inherit">
+                <NavbarButton href="/projects" sx={{ color: '#D5BD8A' }}>
                     Projects
                 </NavbarButton>
-                <NavbarButton href="/skills" color="inherit">
-                    Skills
-                </NavbarButton>
-                <NavbarButton href="/contact" color="inherit">
+                <NavbarButton href="/contact" sx={{ color: '#1DE1FF' }}>
                     Contact
                 </NavbarButton>
                 </Box>
@@ -91,11 +95,10 @@ function Navbar() {
                 anchorEl={anchorEl}
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
+                
             >
                 {pages.map((page) => (
-                <MenuItem key={page.name} href={page.href} onClick={handleClose}>
-                    {page.name}
-                </MenuItem>
+                <MenuItem key={page.name} onClick={handleClose}><LinkButton to={page.href}>{page.name}</LinkButton></MenuItem>
                 ))}
             </Menu>
             </Toolbar>

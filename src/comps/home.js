@@ -4,18 +4,18 @@ import Typography from '@mui/material/Typography';
 
 function HomePage() {
   return (
+    <>
     <Box
       sx={{
-        backgroundColor: '#1F1F1F',
+        backgroundColor: '#17191A',
         color: '#fff',
-        minHeight: '100vh',
+        minHeight: '89vh',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '2rem',
         '@media (max-width:600px)': {
-          padding: '1rem',
+          padding: '1.5rem',
         },
       }}
     >
@@ -23,11 +23,14 @@ function HomePage() {
         variant="h1"
         sx={{
           fontSize: '4rem',
-          fontWeight: 600,
-          color: '#04702c',
-          marginBottom: '2rem',
+          fontFamily: [
+            'antique-olive',
+          ],
+          fontWeight: 500,
+          color: '#55FDB6',
+          marginBottom: '1.5rem',
           '@media (max-width:600px)': {
-            fontSize: '3rem',
+            fontSize: '2.5rem',
             marginBottom: '1.5rem',
           },
         }}
@@ -38,7 +41,11 @@ function HomePage() {
         variant="h2"
         sx={{
           fontSize: '2rem',
-          color: '#D6BF8D',
+          fontFamily: [
+            'antique-olive',
+          ],
+          color: '#D5BD8A',
+          fontWeight: 450,
           marginBottom: '1.5rem',
           '@media (max-width:600px)': {
             fontSize: '1.5rem',
@@ -52,17 +59,21 @@ function HomePage() {
         variant="body"
         sx={{
           fontSize: '1.5rem',
-          color: '#B1CAB0',
-          marginBottom: '2rem',
+          fontFamily: [
+            'antique-olive',
+          ],
+          fontWeight: 400,
+          color: '#1DE1FF',
           '@media (max-width:600px)': {
             fontSize: '1.25rem',
-            marginBottom: '1.5rem',
           },
         }}
       >
         I am passionate about building and deploying scalable, secure, and reliable infrastructure and software systems.
       </Typography>
     </Box>
+
+    </>
   );
 }
 
