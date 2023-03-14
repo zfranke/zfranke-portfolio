@@ -1,16 +1,15 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 
 function HomePage() {
   return (
     <>
     <Box
       sx={{
-        backgroundColor: '#1F1F1F',
+        backgroundColor: '#17191A',
         color: '#fff',
-        minHeight: '87vh',
+        minHeight: '89vh',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -28,7 +27,7 @@ function HomePage() {
             'antique-olive',
           ],
           fontWeight: 500,
-          color: '#02ab64',
+          color: '#55FDB6',
           marginBottom: '1.5rem',
           '@media (max-width:600px)': {
             fontSize: '2.5rem',
@@ -45,7 +44,7 @@ function HomePage() {
           fontFamily: [
             'antique-olive',
           ],
-          color: '#D6BF8D',
+          color: '#D5BD8A',
           fontWeight: 450,
           marginBottom: '1.5rem',
           '@media (max-width:600px)': {
@@ -64,7 +63,7 @@ function HomePage() {
             'antique-olive',
           ],
           fontWeight: 400,
-          color: '#05deff',
+          color: '#1DE1FF',
           '@media (max-width:600px)': {
             fontSize: '1.25rem',
           },

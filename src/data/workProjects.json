@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Call Center Deployment",
+    "description": "For this project, I utilized AWS services (AWS Connect) to launch software solutions a call center would use to operate. I also worked with third party vendors to provide more functionality to the call center in the areas of omnichat and agent monitoring.",
+    "link": "https://github.com/zfranke/SuperBowl-Win",
+    "icon": "call"
+  },
+  {
+    "name": "PCI-Compliance",
+    "description": "Assisted with ensuring all company elements necessary followed PCI-DSS compliance standards. This included working with third party vendors to ensure they were also PCI-DSS compliant and training employees on best practices.",
+    "link": "https://www.pcisecuritystandards.org/",
+    "icon": "security"
+  },
+  {
+    "name": "Internal Tools",
+    "description": "Across my career, I have always strived to be able to either deploy practical solutions to solve problems while dealing with work related processes or create my own tools to solve problems. Most of these tools were built as either bash scripts or simple web apps. Due to legal reasons, some of these tools are not available to see but I do have some small scripts and personal utilities in my github.",
+    "link": "https://github.com/zfranke/",
+    "icon": "tool"
+  }
+]

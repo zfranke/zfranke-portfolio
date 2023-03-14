@@ -15,7 +15,6 @@ const pages = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Projects', href: '/projects' },
-  { name: 'Skills', href: '/skills' },
   { name: 'Contact', href: '/contact' },
 ];
 
@@ -32,13 +31,15 @@ const NavbarButton = styled(Button)({
   '&:hover': {
     background: 'rgba(0,0,0,0.2)',
     borderRadius: '5px',
-    color: 'white',
+    color: '#F2F2D5',
+    transform: 'scale(1.05)',
+    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.4)',
   },
 });
 
 const LinkButton = styled(Link)({
   textDecoration: 'none',
-  color: 'white',
+  color: '#F2F2D5',
 });
 
 
@@ -55,10 +56,10 @@ function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: '#232323' }}>
+      <AppBar position="static" sx={{ backgroundColor: '#1A1D1E' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <NavbarButton href="/" >
-                <Logo variant="h5" component="div" color="#02ab64">
+                <Logo variant="h5" component="div" color="#55FDB6">
                 Zach Franke
                 </Logo>
             </NavbarButton>
@@ -79,16 +80,13 @@ function Navbar() {
                     alignItems: 'center',
                 }}
                 >
-                <NavbarButton href="/about" sx={{ color: '#02ab64' }}>
+                <NavbarButton href="/about" sx={{ color: '#55FDB6' }}>
                     About
                 </NavbarButton>
-                <NavbarButton href="/projects" sx={{ color: '#D6BF8D' }}>
+                <NavbarButton href="/projects" sx={{ color: '#D5BD8A' }}>
                     Projects
                 </NavbarButton>
-                <NavbarButton href="/skills" sx={{ color: '#05deff' }}>
-                    Skills
-                </NavbarButton>
-                <NavbarButton href="/contact" sx={{ color: '#02ab64' }}>
+                <NavbarButton href="/contact" sx={{ color: '#1DE1FF' }}>
                     Contact
                 </NavbarButton>
                 </Box>

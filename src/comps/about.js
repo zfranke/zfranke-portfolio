@@ -6,7 +6,7 @@ function AboutPage() {
   return (
     <Box
       sx={{
-        backgroundColor: "#1F1F1F",
+        backgroundColor: "#17191A",
         color: "#232323",
         minHeight: "85vh",
         display: "flex",
@@ -26,7 +26,7 @@ function AboutPage() {
         sx={{
           fontSize: "3rem",
           fontWeight: 600,
-          color: "#04702c",
+          color: "#55FDB6",
           marginBottom: "2rem",
           "@media (max-width:600px)": {
             fontSize: "2rem",
@@ -39,7 +39,7 @@ function AboutPage() {
         variant="body1"
         sx={{
           fontSize: "1.5rem",
-          color: "#666",
+          color: "#F2F2D5",
           marginBottom: "2rem",
           "@media (max-width:600px)": {
             fontSize: "1.25rem",
@@ -52,7 +52,7 @@ function AboutPage() {
         variant="body1"
         sx={{
           fontSize: "1.5rem",
-          color: "#666",
+          color: "#F2F2D5",
           marginBottom: "2rem",
           "@media (max-width:600px)": {
             fontSize: "1.25rem",
@@ -65,7 +65,7 @@ function AboutPage() {
         variant="body1"
         sx={{
           fontSize: "1.5rem",
-          color: "#666",
+          color: "#F2F2D5",
           marginBottom: "2rem",
           "@media (max-width:600px)": {
             fontSize: "1.25rem",
