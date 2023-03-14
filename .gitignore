@@ -26,3 +26,6 @@ yarn-error.log*
 
 hexcodes.txt
 package-lock.json
+.gitignore
+/.vscode
+package-lock.json
