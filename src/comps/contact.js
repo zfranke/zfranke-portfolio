@@ -41,23 +41,9 @@ const Contact = () => {
       <br />
       <Grid container spacing={2} sx={{ justifyContent: 'center', color: '#D8D4CF' }}>
         <Grid item xs={12} md={6}>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              p: 2,
-              color: '#D8D4CF',
-              backgroundColor: '#EAE8E4',
-              boxShadow: '0 2px 10px rgba(0, 0, 0, 0.2)',
-              borderRadius: '10px',
-            }}
-          >
-            <Typography variant="body1" align="center" sx={{fontSize: '25px'}}>
+            <Typography variant="body1" align="center" sx={{fontSize: '25px', color:"#D5BD8A"}}>
               Email me at: <a href="mailto:zfranke@live.com">zfranke@live.com</a>
             </Typography>
-          </Box>
         </Grid>
       </Grid>
       <br />
