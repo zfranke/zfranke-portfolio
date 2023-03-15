@@ -1,6 +1,8 @@
 # Use an official Node runtime as a parent image
 FROM node:16
 
+ENV NODE_OPTIONS="--max_old_space_size=1024"
+
 # Set the working directory to /app
 WORKDIR /app
 

@@ -6,9 +6,7 @@ import Contact from './comps/contact';
 import Footer from './comps/footer';
 
 import './App.css';
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 function App() {
   return (
     <Router>
@@ -23,7 +21,5 @@ function App() {
     </Router>
   );
 }
-
-
 
 export default App;

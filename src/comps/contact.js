@@ -34,7 +34,6 @@ const Contact = () => {
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.4)',
         },
     };
-
   return (
     <Box
       sx={{
@@ -131,17 +130,13 @@ const Contact = () => {
           </Box>
         </Grid>
       </Grid>
-
         <br />
         <br />
-
         <Typography variant="body1" align="center" sx={{fontSize: '25px'}}>
             Or find me on:
         </Typography>
-
         <br />
         <br />
-
         <Grid item xs={12} md={6}>
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
             <Button
@@ -160,12 +155,10 @@ const Contact = () => {
             >
                 LinkedIn
             </Button>
-
           </Box>
         </Grid>
 
     </Box>
   );
 };
-
 export default Contact;
