@@ -72,7 +72,7 @@ function AboutPage() {
           },
         }}
       >
-        In my free time, I enjoy cooking, which allows me to explore new recipes and experiment with ingredients. I find it fulfilling to volunteer on service projects and events that benefit my local community. In addition, I also work on various side development projects to further enhance my technical skills and stay up-to-date with the latest technologies. There is never a moment to not stop learning, especially with how much technology can change in a short period of time.
+        In my free time, I enjoy cooking, which allows me to explore new recipes and experiment with ingredients (and the fact you can create cool things without updating a package or installing something). I also enjoy volunteering on service projects and events that benefit my local community. In addition, I also work on various side development projects to further enhance my technical skills and stay up-to-date with the latest technologies. There is never a moment to not stop learning, especially with how much technology can change in a short period of time.
       </Typography>
     </Box>
   );
