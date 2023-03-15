@@ -11,13 +11,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { Link } from 'react-router-dom';
 
-const pages = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Projects', href: '/projects' },
-  { name: 'Contact', href: '/contact' },
-];
-
 const Logo = styled(Typography)({
   flexGrow: 1,
   fontWeight: 'bold',
@@ -28,6 +21,8 @@ const Logo = styled(Typography)({
 const NavbarButton = styled(Button)({
   fontSize: '1rem',
   fontWeight: 'bold',
+  backgroundColor: '#1A1D1E',
+
   '&:hover': {
     background: 'rgba(0,0,0,0.2)',
     borderRadius: '5px',
@@ -39,8 +34,21 @@ const NavbarButton = styled(Button)({
 
 const LinkButton = styled(Link)({
   textDecoration: 'none',
-  color: '#F2F2D5',
+  background: '#1A1D1E',
 });
+
+const NavbarMenuItem = styled(MenuItem)({
+  fontSize: '1rem',
+  fontWeight: 'bold',
+  background: '#1A1D1E',
+  '&:hover': {
+    background: '#1A1D1E',
+    borderRadius: '5px',
+    transform: 'scale(1.05)',
+    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.4)',
+  },
+});
+
 
 
 function Navbar() {
@@ -95,10 +103,12 @@ function Navbar() {
                 anchorEl={anchorEl}
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
+                background="#1A1D1E"
+
             >
-                {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleClose}><LinkButton to={page.href}>{page.name}</LinkButton></MenuItem>
-                ))}
+                <NavbarMenuItem onClick={handleClose}><LinkButton to="/about" sx={{color:"#55FDB6"}} >About</LinkButton></NavbarMenuItem>
+                <NavbarMenuItem onClick={handleClose}><LinkButton to="/projects" sx={{color:"#D5BD8A"}} >Projects</LinkButton></NavbarMenuItem>
+                <NavbarMenuItem onClick={handleClose}><LinkButton to="/contact" sx={{color:"#1DE1FF"}} >Contact</LinkButton></NavbarMenuItem>
             </Menu>
             </Toolbar>
       </AppBar>
