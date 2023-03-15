@@ -1,39 +1,8 @@
 import React from 'react';
-import { Box, Button, Grid, TextField, Typography } from '@mui/material';
+import { Box, Button, Grid, Typography } from '@mui/material';
 import { GitHub, LinkedIn } from '@mui/icons-material';
 
 const Contact = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const form = event.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader('Accept', 'application/json');
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        alert('Thank you for your message!');
-      } else {
-        alert('Oops! Something went wrong. Please try again.');
-      }
-    };
-    xhr.send(data);
-  };
-
-  //Style the submit button to be green
-    const style = {
-        backgroundColor: '#55FDB6',
-        color: '#17191A',
-        '&:hover': {
-            backgroundColor: '#55FDB6',
-            color: '#17191A',
-            borderRadius: '5px',
-            transform: 'scale(1.05)',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.4)',
-        },
-    };
   return (
     <Box
       sx={{
@@ -73,10 +42,6 @@ const Contact = () => {
       <Grid container spacing={2} sx={{ justifyContent: 'center', color: '#D8D4CF' }}>
         <Grid item xs={12} md={6}>
           <Box
-            component="form"
-            onSubmit={handleSubmit}
-            action="https://formsubmit.co/your-email-here"
-            method="POST"
             sx={{
               display: 'flex',
               flexDirection: 'column',
@@ -89,74 +54,39 @@ const Contact = () => {
               borderRadius: '10px',
             }}
           >
-            <TextField
-              label="Full Name"
-              name="full-name"
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              sx={{ color: '#D8D4CF' }}
-            />
-            <TextField
-              label="Email Address"
-              name="email"
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-            />
-            <TextField
-                label="Subject"
-                name="subject"
-                variant="outlined"
-                margin="normal"
-                required
-                fullWidth
-            />
-            <TextField
-              label="Message"
-              name="message"
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              multiline
-              rows={4}
-            />
-            <Button variant="outlined" type="submit" sx={style}>
-              Submit
-            </Button>
+            <Typography variant="body1" align="center" sx={{fontSize: '25px'}}>
+              Email me at: <a href="mailto:zfranke@live.com">zfranke@live.com</a>
+            </Typography>
           </Box>
         </Grid>
       </Grid>
-        <br />
-        <br />
-        <Typography variant="body1" align="center" sx={{fontSize: '25px'}}>
-            Or find me on:
-        </Typography>
-        <br />
-        <br />
-        <Grid item xs={12} md={6}>
-          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Button
-              variant="contained"
-              startIcon={<GitHub />}
-              href="https://github.com/zfranke"
-              sx={{ mr: 2 }}
-            >
-              GitHub
-            </Button>
-            <Button
-              variant="contained"
-              startIcon={<LinkedIn />}
-              href="https://www.linkedin.com/in/zachary-franke-064211159/"
-                sx={{ ml: 2 }}
-            >
-                LinkedIn
-            </Button>
-          </Box>
-        </Grid>
+      <br />
+      <br />
+      <Typography variant="body1" align="center" sx={{fontSize: '25px'}}>
+        Or find me on:
+      </Typography>
+      <br />
+      <br />
+      <Grid item xs={12} md={6}>
+        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Button
+            variant="contained"
+            startIcon={<GitHub />}
+            href="https://github.com/zfranke"
+            sx={{ mr: 2 }}
+          >
+            GitHub
+          </Button>
+          <Button
+            variant="contained"
+            startIcon={<LinkedIn />}
+            href="https://www.linkedin.com/in/zachary-franke-064211159/"
+            sx={{ ml: 2 }}
+          >
+            LinkedIn
+          </Button>
+        </Box>
+      </Grid>
 
     </Box>
   );
