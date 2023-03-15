@@ -1,5 +1,4 @@
 import { Box, Link, Typography } from '@mui/material';
-
 function Footer() {
   return (
     <Box sx={{ backgroundColor: '#1A1D1E', color: '#F2F2D5', py: 2 }}>
@@ -12,5 +11,4 @@ function Footer() {
     </Box>
   );
 }
-
 export default Footer;
